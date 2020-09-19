@@ -1,0 +1,77 @@
+html {
+}
+
+body, div, img {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  overflow: hidden;
+  min-width: 1080px;
+}
+
+header {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 144px 0px 212px 0px;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+header #group_area {
+  position: relative;
+  width: 147px;
+  height: 225px;
+  margin: 0 auto;
+}
+
+#profile {
+  position:static;
+  border-radius: 26px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(51, 51, 51);
+  background-image: url(../img/profile.jpg);
+  height: 128px;
+  width: 128px;
+  margin: 0 auto;
+}
+
+#profile_text {
+  position: relative;
+
+  /* font-family: Dotum; */
+  font-display: swap;
+
+  /* top:22px; */
+  /* left: 148px; */
+}
+
+#profile_text .profile_name {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#profile_text .profile_desc {
+  padding-left: 5px;
+  text-align: center;
+}
+
+section {
+  position: relative;
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
+  padding-top: 240px;
+  background-color: #e5e5e5;
+  border-top: 1px solid #ffffff;
+}
+
+section #projects_art {
+  background-color: #9788ba;
+  height: 700px;
+  border-top: 1px solid #ffffff;
+}
