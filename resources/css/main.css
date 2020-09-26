@@ -7,6 +7,17 @@ body, div, img {
   padding: 0;
 }
 
+ul, ol {
+  margin: 0;
+}
+
+#card_rope {
+  position: absolute;
+  top: 745px;
+  width:100%;
+  border-bottom: 2px solid #c0c0c0;
+}
+
 #wrap {
   overflow: hidden;
   min-width: 1080px;
@@ -17,7 +28,7 @@ header {
   width: 1200px;
   margin: 0 auto;
   /* background-color: #fff; */
-  padding: 144px 0px 212px 0px;
+  padding: 185px 0px 70px 0;
   /* border-bottom: 2px solid #c0c0c0; */
 }
 
@@ -59,10 +70,43 @@ header #group_area {
   font-family: 'Gugi', cursive;
 }
 
+header #message_area {
+  position: relative;
+
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#message_area .message_body {
+  height: 60px;
+  padding: 15px;
+  color: #fff;
+  background-color: #666;
+
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+}
+
+#message_area .message_edge {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: -12px;
+
+  margin-left: -12px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #666;
+}
+
+
 section {
   position: relative;
   width: 1200px;
-  height: 1000px;
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 20px;
@@ -71,16 +115,18 @@ section {
 
 section #stack_art {
   position: relative;
-  height: 350px;
+  height: 340px;
 }
 
 section #stack_art #stack_group {
   text-align: center;
+  font-family: 'Gugi', cursive;
 }
 
 #stack_group .stack_box {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 207px;
   height: 276px;
   margin: 10px 20px;
@@ -89,20 +135,31 @@ section #stack_art #stack_group {
   z-index: 1;
 }
 
+.stack_box .stack_desc {
+  text-align: left;
+  padding: 10px 40px;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Gugi', cursive;
+}
+
 section #stack_art .stack_bgd {
   position: absolute;
   z-index: 0;
-  width: 1150px;
-  height:210px;
+  width: 1100px;
+  height:170px;
   bottom: 0px;
-  left: 25px;
+  left: 50px;
   background-color: #e5e5e5;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
 }
 
 section #projects_art {
+  position: relative;
+  z-index: 1;
   background-color: #9788ba;
   height: 700px;
   border-radius: 15px;
   border-top: 1px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
 }
